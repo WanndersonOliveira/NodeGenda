@@ -3,7 +3,6 @@ Agenda de compromissos criada com NodeJS
 
 ### Requisitos Não Funcionais
 
-- Sistema Web
 | Cod. | Nome | Descrição | Categoria |
 | -------- | -------- | -------- | -------- |
 | NF01 | Sistema Web |	A aplicação será disponível através da internet e o acesso através de navegadores. | Obrigatório|
