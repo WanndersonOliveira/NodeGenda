@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>UC01</title>
+</head>
+<body>
+	<h3>Cadastro de Compromisso</h3>
+
+	<%  if(val == 0) {  %>
+		<b style="color: green">Compromisso gravado com sucesso!</b>
+	<% } else if(val == 1) { %>
+		<b style="color: red">Um erro ocorreu! Desculpe, não foi possível gravar o seu compromisso!</b>
+	<% } %>
+
+
+
+	<% for(var i = 0; i < 5; i++){%>
+		<br>
+	<% } %>
+
+	<a href="/listar">Visualizar cadastros</a>
+
+	<% for(var i = 0; i < 4; i++){ %>
+		<br>
+	<% } %>
+
+	<a href="/cadastrar">Voltar</a>
+</body>
+</html>

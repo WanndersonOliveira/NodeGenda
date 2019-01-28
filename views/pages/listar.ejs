@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>UC02</title>
+</head>
+<body>
+	<h3>Cadastro de Compromisso</h3>
+
+	<% for(var i = 0; i < 5; i++){%>
+		<br>
+	<% } %>
+
+	<table border="1">
+		<tr>
+			<th>Data</th>
+			<th>Horário</th>
+			<th>Descrição</th>
+			<th>Local</th>
+			<th>Ação</th>
+			<th>Ação</th>
+		</tr>
+		<% comp.forEach(function(comp){ %>
+			<tr>
+				<td><%=comp.data%></td>
+				<td><%=comp.horario%></td>
+				<td><%=comp.descricao%></td>
+				<td><%=comp.local%></td>
+				<td><a href="#">Editar</a></td>
+				<td><a href="?">Excluir</a></td>
+			</tr>
+		<% }) %>
+	</table>
+
+	<% for(var i = 0; i < 4; i++){%>
+		<br>
+	<% } %>
+
+	<a href="/cadastrar">Cadastrar novo contato</a>
+</body>
+</html>
