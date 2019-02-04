@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>UC02</title>
+</head>
+<body>
+	<h3>Edição de Compromisso</h3>
+
+	<% for(var i = 0; i < 5; i++){%>
+		<br>
+	<% } %>
+	
+	<form method="post" action="/edicao">
+	<% compr.forEach(function(compr){ %>
+		<p>Data: </p>
+		<input type="date" name="data" value="<%=compr.data%>">
+		<br>
+		<p>Horário: </p>
+		<input type="time" name="horario" value="<%=compr.horario%>">
+		<br>
+		<p>Descrição: </p>
+		<textarea cols="40" rows="5" name="desc"><%=compr.descricao%></textarea>
+		<br>
+		<p>Local: </p> <input type="text" name="local" value="<%=compr.local%>">
+		<br>
+		<br><br>
+		<input type="submit" value="Editar">
+		<input type="hidden" name="nmbr" value="<%=compr.id%>">
+	<% }) %>
+	</form>
+
+	<% for(var i = 0; i < 4; i++){%>
+		<br>
+	<% } %>
+
+
+	<a href="/cadastrar">Cadastrar novo contato</a>
+</body>
+</html>
